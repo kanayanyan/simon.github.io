@@ -1,0 +1,329 @@
+/* ---色の変数--- */
+:root {
+  --blue: #539DFF;
+}
+/* ----------------------- */
+
+
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background: #CCCCCC;
+}
+
+header {
+  display: flex;
+  padding: 0 16px;
+  color: var(--blue);
+  background: rgb(18, 18, 18);
+  height: 100px;
+  
+}
+/* ----------------------------------- */
+header h1{
+  margin: 0;
+  font-size: 22px;
+  line-height: 30px;
+  padding-top: 10%; /* --とりあえず揃った--- */
+}
+ .logo a{
+   text-decoration: none;
+   color: var(--blue);
+ }
+
+ .logo a:hover {
+   color: #8dbfff;
+ }
+
+.sp-menu {
+  margin-left: auto;
+  padding-top: 1%; /* --とりあえず揃った--- */
+}
+
+.sp-menu #open {
+  font-size: 32px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.sp-menu #open.hide {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(118, 118, 118, 0.9);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.overlay ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+.overlay li {
+  margin-top: 60px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition:  opacity .2s, transform.2s;
+}
+
+.overlay a{
+  color: white;
+  text-decoration: none;
+}
+
+.overlay.show li{
+  opacity: 1;
+  transform: none;
+}
+
+.overlay.show li:nth-child(1) {
+  transition-delay: .05s;
+}
+.overlay.show li:nth-child(2) {
+  transition-delay: .1s;
+}
+.overlay.show li:nth-child(3) {
+  transition-delay: .15s;
+}
+.overlay.show li:nth-child(4) {
+  transition-delay: .2s;
+}
+
+
+/* ---------------- */
+
+main {
+  padding: 0 16px;
+}
+
+/* ------------おっさんの写真----------- */
+.ossan {
+  width: 100%;
+}
+
+
+/* -------------------profile-------- */
+.profile {
+  padding: 0;
+  height: 400px;
+  background: #CCCCCC;
+}
+
+.profile p{
+  margin: 40px;
+  text-align: center;
+  font-size: 47px;
+  font-weight: solid;
+  color: rgb(31, 31, 31);
+}
+
+.icon {
+  width: 120px;
+  vertical-align: -10px;
+  padding-right: 5%;
+}
+.prf {
+  display: inline-block;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.content {
+  text-align: center;
+  /* margin: 100px 0; */
+  /* border:2px solid black; */
+}
+
+.prf h1{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 200;
+  color: rgb(24, 24, 24);
+}
+
+.prf p{
+  margin: 0;
+  font-size: 15px;
+  text-align: left;
+  color: rgb(24, 24, 24);
+}
+
+/* -----------------skills */
+.skills {
+  background: white;
+  height: 400px;
+}
+
+.skills p{
+  padding-top: 40px;
+  text-align: center;
+  font-size: 47px;
+  color: rgb(24, 24, 24);
+}
+
+.skillsicon {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* -----------------works */
+
+.works {
+  height: 400px;
+  background: #CCCCCC;
+}
+.works p{
+  color: rgb(24, 24, 24);
+  padding-top: 40px;
+  text-align: center;
+  font-size: 47px;
+  margin: 0;
+}
+
+.works .line{
+  text-align: center;
+  font-size: 20px;
+  font-weight: solid;
+  padding: 100px;
+}
+
+.works .more{
+  text-align: center;
+   margin-bottom: 2px;
+}
+
+.more a{
+
+  /* text-decoration: none; */
+  color: rgb(65, 65, 65);
+}
+
+
+/* --------------------contact */
+.contact {
+  height: 400px;
+  background: white;
+  
+}
+.contact p{
+  color: rgb(24, 24, 24);
+  padding-top: 40px;
+  text-align: center;
+  font-size: 47px;
+}
+
+.contact ul{
+  text-align: center;
+  list-style-type: none;
+  padding-top: 40px;
+}
+
+.contact a{
+  color: gray;
+}
+
+.linkicon {
+  text-align: center;
+}
+
+.twitter{
+  width: 70px;
+  margin-right: 40px;
+}
+
+.githubicon {
+  width: 70px;
+  opacity: 0.8;
+}
+
+/* ----------------------footer */
+footer{
+  padding: 64px 0;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+/* -------------------------------works */
+.wks {
+  height: 400px;
+  text-align: center;
+  padding-top: 300px;
+  font-size: 30px;
+}
+
+.wks a{
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+  font-size: 20px;
+}
+
+.wks a:hover {
+  color: rgb(101, 101, 101);
+}
+/* ------------------------------------------ */
+
+span {
+  color: var(--blue);
+}
+
+.pc-menu {
+  display: none;
+}
+
+@media (min-width: 800px) { 
+  .pc-menu {
+    display: block;
+    margin-left: auto;
+  }
+
+  .pc-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 20px;
+  }
+
+  .pc-menu a{
+    display: block;
+    width: 80px;
+    line-height: 100px;
+    color: var(--blue);
+    text-decoration: none;
+    /* text-align: center; */
+  }
+
+  .pc-menu a:hover {
+    color: #9ac6ff;
+  }
+
+  .sp-menu {
+    display: none;
+  }
+}
